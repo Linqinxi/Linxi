@@ -1,6 +1,7 @@
 #!name=林夕净化
 #!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度
 #!author=林夕、key、RuCu6、baby
+#!说明=感谢Keywos、RuCu6、baby大佬们的分享，本脚本为自用。
 
 [General]
 force-http-engine-hosts = %APPEND% sdk.alibaba.com.ailbaba.me
@@ -29,7 +30,7 @@ tcp-connection = true
 # > Lofter去广告，hostname = ad.lofter.com
 ^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-# > 感谢key的分享
+# > 感谢key的分享，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/noAdrule.sgmodule
 # > 大师兄影视去广告，hostname = sdk.alibaba.com.ailbaba.me
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/(dsx|xgapp)\.php\/v\d\/(top_notice\?|app_config|search_hot|version|advert\?position=[^2]+) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
 
@@ -38,7 +39,7 @@ tcp-connection = true
 
 ^https?:\/\/api\.caiyunapp\.com\/v1\/activity\? data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
 
-# > 百度输入法净化，个人页随机图片。作者：@Keywos
+# > 百度输入法净化，个人页随机图片。作者：@Keywos，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/Baidu_srf.sgmodule
 # > hostname = imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com
 
 # 百度输入法开屏
@@ -57,20 +58,20 @@ tcp-connection = true
 # log
 ^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/mime.json"
 
-# > Baidu 首页纯净搜索 @key，hostname = m.baidu.com,www.baidu.com
+# > Baidu 首页纯净搜索 @key，hostname = m.baidu.com,www.baidu.com，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/baiduIndex.sgmodule
 ^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/baidu.html" header="Content-Type: text/html; charset=utf-8"
 
 
 [Script]
-# > 感谢key的分享
+# > 感谢key的分享，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/noAdrule.sgmodule
 # > 爱思推广全部干掉只保留搜索，hostname = list-app-m.i4.cn, search-app-m.i4.cn
 爱思 = type=http-response,pattern=^https?:\/\/(search|list)-app-m\.i4\.cn\/(getHotSearchList|getAppList)\.xhtml,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/aisi.js
 
 # > 彩云天气解锁，作者：@RuCu6
-# 彩云天气 //biz.cyapi.cn
+# 彩云天气 //biz.cyapi.cn，来源：https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/AppUnlock.conf
 caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js, timeout=60, script-update-interval=86400
 
-# > 百度输入法净化，个人页随机图片。作者：@Keywos
+# > 百度输入法净化，个人页随机图片。作者：@Keywos，来源：
 BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),requires-body=1,max-size=0,script-update-interval=-1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
 
 [MITM]
