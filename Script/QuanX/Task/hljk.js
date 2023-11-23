@@ -7,9 +7,11 @@
  * 1. 设置基准货币，默认人民币(CNY)。
  * 2. 设置保留几位小数。
  * @update ：YangZhaocool
-
+ * 来源：https://raw.githubusercontent.com/chxm1023/Task/main/hljk.js
+ * 说明：感谢Peng-YM、chxm1023大佬们的分享，本脚本为自用。
+ 
 [task_local]
-10 0 * * ? https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/Task/Cnyusd.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png, enabled=true
+10 0 * * ? https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/Task/hljk.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png, enabled=true
 
 ****************************************/
 
