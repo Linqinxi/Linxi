@@ -1,0 +1,7 @@
+# > AppStore
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com
+# > TestFlight
+DOMAIN,beta.apple.com
+DOMAIN,testflight.apple.com
+DOMAIN-KEYWORD,testflight

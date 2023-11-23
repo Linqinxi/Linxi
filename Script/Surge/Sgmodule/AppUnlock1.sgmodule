@@ -1,0 +1,24 @@
+#!name=林夕解锁
+#!desc=自用合集，全部为非一次性解锁
+#!author=林夕
+#!Telegram=https://t.me/Linxi01
+
+[Script]
+一木清单= type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/yimutodo\.com\/api\/v\/mtop,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Ymqd.js
+
+云上写作= type=http-response,requires-body=1,max-size=0,pattern=^http?:\/\/www\.yunshangxiezuo\.com\/api\/getAuthenticate,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Ysxz.js
+
+口袋写作= type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.kdwrite\.cn\/kdwrite\/app\/user\/get,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Kdxz.js
+
+墨咕= type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/goapi\.mogugu\.co\/api\/user\/v1\/findUserInfo,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Muogu.js
+
+番薯小说= type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(ggs|g20)\.manmeng168\.com,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Fsxs.js
+
+iScreen= type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/cs.kuso.xyz\/configs,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/iScreen.js
+
+
+[MITM]
+hostname = %APPEND% goapi.mogugu.co, app.kdwrite.cn, app.kdwrite.cn, yimutodo.com, ggs.manmeng168.com, g20.manmeng168.com, cs.kuso.xyz
+
+
+

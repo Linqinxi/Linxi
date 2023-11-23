@@ -1,0 +1,27 @@
+#!name=林夕解锁
+#!desc=自用合集，全部为非一次性解锁
+#!author=林夕
+#!Telegram=https://t.me/Linxi01
+
+# > 一木清单，hostname = yimutodo.com
+^https?:\/\/yimutodo\.com\/api\/v\/mtop url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Ymqd.js
+
+# > 云上写作，hostname = www.yunshangxiezuo.com
+^http?:\/\/www\.yunshangxiezuo\.com\/api\/getAuthenticate url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Ysxz.js
+
+# > 口袋写作，hostname = app.kdwrite.cn
+^https?:\/\/app\.kdwrite\.cn\/kdwrite\/app\/user\/get url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Kdxz.js
+
+# > 墨咕，hostname = goapi.mogugu.co
+^https?:\/\/goapi\.mogugu\.co\/api\/user\/v1\/findUserInfo url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Mogu.js
+
+# > 番薯小说，hostname = g20.manmeng168.com, ggs.manmeng168.com
+^https?:\/\/(ggs|g20)\.manmeng168\.com url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/Fsxs.js
+
+# > iScreen，hostname = cs.kuso.xyz
+
+^http[s]?:\/\/cs.kuso.xyz\/configs url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/JS/iScreen.js
+
+hostname = goapi.mogugu.co, app.kdwrite.cn, app.kdwrite.cn, yimutodo.com, ggs.manmeng168.com, g20.manmeng168.com, cs.kuso.xyz
+
+

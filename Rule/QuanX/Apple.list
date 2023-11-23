@@ -1,0 +1,7 @@
+# AppStore
+HOST,apps.apple.com,苹果服务
+HOST,itunes.apple.com,苹果服务
+# TestFlight
+HOST,beta.apple.com,苹果服务
+HOST,testflight.apple.com,苹果服务
+HOST-KEYWORD,testflight,苹果服务

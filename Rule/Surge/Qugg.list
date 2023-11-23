@@ -1,0 +1,79 @@
+DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com,REJECT
+DOMAIN,dig.bdurl.net,REJECT
+DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
+DOMAIN,tnc3-aliec2.snssdk.com,REJECT
+DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com,REJECT
+DOMAIN,lf9-cdn-tos.bytegecko.com,REJECT
+DOMAIN-SUFFIX,api.anythinktech.com,REJECT
+DOMAIN-SUFFIX,da.anythinktech.com,REJECT
+DOMAIN-SUFFIX,sdk.open.talk.getui.com,REJECT
+DOMAIN-SUFFIX,fusion.qq.com,REJECT
+DOMAIN-SUFFIX,uop.umeng.com,REJECT
+DOMAIN-SUFFIX,alogs.umeng.com,REJECT
+DOMAIN-SUFFIX,alogs.umengcloud.com,REJECT
+DOMAIN-SUFFIX,log.umsns.com,REJECT
+DOMAIN-SUFFIX,stats.umsns.com,REJECT
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com,REJECT
+DOMAIN-SUFFIX,adx-cn.anythinktech.com,REJECT
+DOMAIN,mi.gdt.qq.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
+DOMAIN-SUFFIX,tk.anythinktech.com,REJECT
+DOMAIN-SUFFIX,log1.cmpassport.com,REJECT
+DOMAIN-SUFFIX,config.cmpassport.com,REJECT
+DOMAIN-SUFFIX,id6.me,REJECT
+DOMAIN-SUFFIX,auth.wosms.cn,REJECT
+DOMAIN-SUFFIX,opencloud.wostore.cn,REJECT
+DOMAIN,toblog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,gromore.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
+DOMAIN,open.e.kuaishou.com,REJECT
+DOMAIN-SUFFIX,gdfp.gifshow.com,REJECT
+DOMAIN-SUFFIX,p1-lm.adkwai.com,REJECT
+DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN,sdk.open.talk.getui.net,REJECT
+DOMAIN-SUFFIX,sdk.open.talk.gepush.com,REJECT
+DOMAIN-SUFFIX, app-measurement.com, reject
+DOMAIN-SUFFIX, ulogs.umeng.com, reject
+DOMAIN, googleads.g.doubleclick-cn.net, reject
+DOMAIN-SUFFIX, ulogs.umengcloud.com, reject
+DOMAIN, lookup.api.bsb.baidu.com, REJECT
+DOMAIN, proxy.safebrowsing.apple, REJECT
+DOMAIN, safebrowsing.g.applimg.com, REJECT
+DOMAIN, safebrowsing.googleapis.com, REJECT
+DOMAIN, safebrowsing.urlsec.qq.com, REJECT
+DOMAIN, token.safebrowsing.apple, REJECT
+DOMAIN, vs6.bj2ct.u3.ucweb.com, REJECT
+DOMAIN-SUFFIX, safebrowsing.apple, REJECT
+DOMAIN-SUFFIX, u3.ucweb.com, REJECT
+DOMAIN, mall.bilibili.com, REJECT
+DOMAIN, passport.bilibili.com, REJECT
+DOMAIN, ad.cyapi.cn, REJECT
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, btrace.qq.com, REJECT
+DOMAIN, btrace.video.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+DOMAIN, mtrace.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, p.l.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, rpt.gdt.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, tytx.m.cn.miaozhen.com, REJECT
+DOMAIN, vv6.video.qq.com, REJECT
+DOMAIN-SUFFIX, trace.qq.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT
+DOMAIN, ipv4.gdt.qq.com, REJECT
+DOMAIN, qqadapt.qpic.cn, REJECT
+DOMAIN, adstrategy.biz.weibo.com, REJECT
+DOMAIN, kadmimage.biz.weibo.com, REJECT
+DOMAIN, sdkaction.biz.weibo.com, REJECT
+DOMAIN, sdkclick.biz.weibo.com, REJECT
+DOMAIN, sdkmonitor.biz.weibo.com, REJECT
+DOMAIN, us.l.qq.com, reject, REJECT
+

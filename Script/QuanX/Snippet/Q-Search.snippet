@@ -1,0 +1,66 @@
+//🔍Safari超级搜索
+//作者：zqzess、林夕
+//说明：脚本为自用，部分是我自己写的。【命令+空格+关键词】
+//部分来源：https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/Qsearch.plugin
+
+// 搜索
+// g （谷歌搜索）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=g\+([^&]+) url 302 https://www.google.com/search?q=$2
+// bi （必应搜索）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=bi\+([^&]+) url 302 https://cn.bing.com/search?q=$2
+// sg （搜狗搜索）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=sg\+([^&]+) url 302 https://m.sogou.com/web/searchList.jsp?keyword=$2
+// gf （油猴1搜索）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=gf\+([^&]+) url 302 https://greasyfork.org/zh-CN/scripts?q=$2
+// tk （油猴2搜索）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tk\+([^&]+) url 302 https://www.tampermonkey.net/scripts.php?locale=zh/search?q=$2
+// tf (Google 搜索 TestFlight)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tf(\+|%20)([^&]+) url 302 https://www.google.com/search?as_q=$3&as_sitesearch=testflight.apple.com
+
+
+// 视频
+// bl （哔哩哔哩）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=bl\+([^&]+) url 302 https://m.bilibili.com/search?keyword=$2
+// yt （YouTube）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=yt\+([^&]+) url 302 https://www.youtube.com/results?search_query=$2
+// ph （PornHub）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=ph\+([^&]+) url 302 https://cn.pornhub.com/video/search?search=$2
+
+
+// 社区
+// ao （ao3）
+^https:\/\/m\.baidu\.com\/s\?from=(.+)&word=ao\+([^&]+) url 302 https://archiveofourown.org/works/search?utf8=✓&work_search[query]=$2
+// hi （hifini）
+^https:\/\/m\.baidu\.com\/s\?from=(.+)&word=hi\+([^&]+) url 302 https://www.hifini.com/search.htm?keyword=$2
+// gh （GitHub）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=gh\+([^&]+) url 302 https://github.com/search?q=$2
+// tw （Twitter）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tw\+([^&]+) url 302 https://twitter.com/search?q=$2
+// wb （微博）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=wb\+([^&]+) url 302 https://s.weibo.com/weibo/$2
+// wx （微信）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=wx\+([^&]+) url 302 https://weixin.sogou.com/weixinwap?query=$2
+// db （豆瓣）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=db\+([^&]+) url 302 https://m.douban.com/search?query=$2
+// zh （知乎）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=zh\+([^&]+) url 302 http://www.zhihu.com/search?q=$2
+
+
+// 翻译
+// yd （有道词典）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=yd\+([^&]+) url 302 https://dict.youdao.com/search?q=$2
+// trc  (Google 译至中)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=trc\+([^&]+) url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$2
+// tre  (Google 译至英)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tre\+([^&]+) url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2
+
+
+// 购物
+// jd （京东）
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=jd\+([^&]+) url 302 https://so.m.jd.com/ware/search.action?keyword=$2
+// tb  (淘宝)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tb\+([^&]+) url 302 https://s.m.taobao.com/h5?q=$2
+
+
+hostname = m.baidu.com
+

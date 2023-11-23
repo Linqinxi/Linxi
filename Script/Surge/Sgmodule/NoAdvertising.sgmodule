@@ -1,0 +1,80 @@
+#!name=林夕净化
+#!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度
+#!author=林夕、key、RuCu6、baby
+
+[General]
+force-http-engine-hosts = %APPEND% sdk.alibaba.com.ailbaba.me
+tcp-connection = true
+
+[URL Rewrite]
+# > 感谢key的分享
+# > 爱思开屏，hostname = list-app-m.i4.cn
+^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml - reject
+
+# > 感谢RuCu6的分享
+# > 微博去首页红点，hostname = api.weibo.cn
+^https?:\/\/api\.weibo\.cn\/2\/remind\/unread_count - reject
+
+# > 微博去消息的打开通知
+^https?:\/\/api\.weibo\.cn\/2\/remind\/unread_count - reject
+
+# > 感谢baby的分享
+# > 彩云天气发现，hostname = starplucker.cyapi.cn
+^https?:\/\/starplucker\.cyapi\.cn\/v3\/operation\/features\? - reject
+
+[Map Local]
+# > 波点音乐去广告，hostname = bd-api.kuwo.cn
+^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# > Lofter去广告，hostname = ad.lofter.com
+^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# > 感谢key的分享
+# > 大师兄影视去广告，hostname = sdk.alibaba.com.ailbaba.me
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/(dsx|xgapp)\.php\/v\d\/(top_notice\?|app_config|search_hot|version|advert\?position=[^2]+) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+
+# > 彩云天气去广告，作者：@Keywos
+^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json"
+
+^https?:\/\/api\.caiyunapp\.com\/v1\/activity\? data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+
+# > 百度输入法净化，个人页随机图片。作者：@Keywos
+# > hostname = imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com
+
+# 百度输入法开屏
+^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads/list data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+# 应用内灵感语录 输入页面推荐里语录
+^https?:\/\/mime\.baidu\.com\/sapi\/v1\/lccorpus\/(applist|pannellist) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/mime.json"
+
+# 输入法点击图标 | 收集和分析用户的输入数据
+^https?:\/\/mime\.baidu\.com\/sapi\/v1\/(circle\/joinedlist|lccorpus\/usercorpussync|aihelpactivity\/aihelpresource) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/mime.json"
+
+^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/mime.json"
+
+^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/bd.json"
+#^https?:\/\/h2tcbox\.baidu\.com\/ztbox\?action=zubc\&appname=baidu_input data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/bd.json"
+
+# log
+^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/mime.json"
+
+# > Baidu 首页纯净搜索 @key，hostname = m.baidu.com,www.baidu.com
+^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/baidu.html" header="Content-Type: text/html; charset=utf-8"
+
+
+[Script]
+# > 感谢key的分享
+# > 爱思推广全部干掉只保留搜索，hostname = list-app-m.i4.cn, search-app-m.i4.cn
+爱思 = type=http-response,pattern=^https?:\/\/(search|list)-app-m\.i4\.cn\/(getHotSearchList|getAppList)\.xhtml,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/aisi.js
+
+# > 彩云天气解锁，作者：@RuCu6
+# 彩云天气 //biz.cyapi.cn
+caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js, timeout=60, script-update-interval=86400
+
+# > 百度输入法净化，个人页随机图片。作者：@Keywos
+BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),requires-body=1,max-size=0,script-update-interval=-1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
+
+[MITM]
+h2 = true
+hostname = %APPEND% bd-api.kuwo.cn, ad.lofter.com, sdk.alibaba.com.ailbaba.me, starplucker.cyapi.cn, api.weibo.cn, list-app-m.i4.cn, search-app-m.i4.cn, biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com, m.baidu.com,www.baidu.com   
+
+
