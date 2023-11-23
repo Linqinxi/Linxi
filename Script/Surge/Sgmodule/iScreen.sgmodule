@@ -1,0 +1,11 @@
+#!name=iScreen解锁
+#!desc=非一次性解锁
+#!author=baby
+
+[Script]
+
+iScreen= type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/cs.kuso.xyz\/configs,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/carry/Script/QuanX/JS/iScreen.js
+
+
+[MITM]
+hostname = %APPEND% cs.kuso.xyz

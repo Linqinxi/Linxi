@@ -1,0 +1,25 @@
+#!name=酷我音乐去广告
+#!desc=酷我音乐去广告
+#!author=@ArthasYZ
+
+[Rule]
+DOMAIN, splashimgbssdl.yun.kugou.com, REJECT
+DOMAIN, report.tencentmusic.com, REJECT
+DOMAIN, ad.tencentmusic.com, REJECT
+DOMAIN, adstats.tencentmusic.com, REJECT
+
+URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/album\/adBar, REJECT
+URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert, REJECT
+URL-REGEX, ^http:\/\/mobilead\.kuwo\.cn\/MobileAdServer, REJECT
+URL-REGEX, ^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer, REJECT
+URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/startup, REJECT
+URL-REGEX, ^http:\/\/rich\.kuwo\.cn\/AdService, REJECT
+
+AND,((DOMAIN,mobilead.kuwo.cn,extended-matching), (URL-REGEX,"^http:\/\/((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}\/openapi\/v1\/album\/adBar")),REJECT
+AND,((DOMAIN,mobilead.kuwo.cn,extended-matching), (URL-REGEX,"^http:\/\/((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}\/openapi\/v1\/app\/pasterAdvert")),REJECT
+AND,((DOMAIN,mobilead.kuwo.cn,extended-matching), (URL-REGEX,"^http:\/\/((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}\/MobileAdServer")),REJECT
+AND,((DOMAIN,mobilead.kuwo.cn,extended-matching), (URL-REGEX,"^http:\/\/((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}\/EcomResourceServer")),REJECT
+AND,((DOMAIN,mobilead.kuwo.cn,extended-matching), (URL-REGEX,"^http:\/\/((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))(\.((2((5[0-5])|([0-4]\d)))|([0-1]?\d{1,2}))){3}\/AdService")),REJECT
+
+[MITM]
+hostname= %APPEND% *.kuwo.cn,*.tencentmusic.com
