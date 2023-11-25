@@ -1,5 +1,5 @@
 //🔍Safari超级搜索
-//作者：zqzess、林夕
+//作者：林夕、zqzess
 //说明：脚本为自用，部分是我自己写的。【命令+空格+关键词】
 //说明：感谢zqzess大佬的分享
 //部分来源：https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/Qsearch.plugin
@@ -11,6 +11,14 @@
 ^https:\/\/m\.baidu\.com/s\?from=(.+)&word=bi\+([^&]+) url 302 https://cn.bing.com/search?q=$2
 // sg （搜狗搜索）
 ^https:\/\/m\.baidu\.com/s\?from=(.+)&word=sg\+([^&]+) url 302 https://m.sogou.com/web/searchList.jsp?keyword=$2
+// sm  (神马搜索)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=sm\+([^&]+) url 302 https://m.sm.cn/s?q=$2
+// ddg (DuckDuckGo)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=ddg\+([^&]+) url 302 https://duckduckgo.com/?t&q=$2
+// tt  (头条搜索)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=tt\+([^&]+) url 302 https://so.toutiao.com/search?q=$2
+// wz  (无追搜索)
+^https:\/\/m\.baidu\.com/s\?from=(.+)&word=wz\+([^&]+) url 302 https://www.wuzhuiso.com/s?q=$2
 // gf （油猴1搜索）
 ^https:\/\/m\.baidu\.com/s\?from=(.+)&word=gf\+([^&]+) url 302 https://greasyfork.org/zh-CN/scripts?q=$2
 // tk （油猴2搜索）
