@@ -1,7 +1,7 @@
 #!name=林夕净化
 #!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度
-#!author=林夕、key、RuCu6、baby
-#!说明=感谢Keywos、RuCu6、baby大佬们的分享，本脚本为自用。
+#!author=林夕、key、RuCu6、baby、chxm1023
+#!说明=感谢Keywos、RuCu6、baby、chxm1023大佬们的分享，本脚本为自用。
 
 [General]
 force-http-engine-hosts = %APPEND% sdk.alibaba.com.ailbaba.me
@@ -74,6 +74,8 @@ caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info
 # > 百度输入法净化，个人页随机图片。作者：@Keywos，来源：
 BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),requires-body=1,max-size=0,script-update-interval=-1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
 
+# > 波点音乐主页去轮播图、波点实验室，作者：@chxm1023
+波点音乐 = type=http-response,pattern=^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/Surge/JS/bodiao.js
 [MITM]
 h2 = true
 hostname = %APPEND% bd-api.kuwo.cn, ad.lofter.com, sdk.alibaba.com.ailbaba.me, starplucker.cyapi.cn, api.weibo.cn, list-app-m.i4.cn, search-app-m.i4.cn, biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com, m.baidu.com,www.baidu.com   
