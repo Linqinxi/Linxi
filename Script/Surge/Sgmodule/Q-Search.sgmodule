@@ -40,7 +40,7 @@
 
 // 社区
 // ao （ao3）
-^https:\/\/m\.baidu\.com\/s\?from=(.+)&word=ao\+([^&]+) https://archiveofourown.org/works/search?utf8=✓&work_search[query]=$2 302
+^https:\/\/m\.baidu\.com\/s\?from=(.+)&word=ao\+([^&]+) https://archiveofourown.org/works/search?utf8=2&work_search[query]=$2 302
 // hi （hifini）
 ^https:\/\/m\.baidu\.com\/s\?from=(.+)&word=hi\+([^&]+) https://www.hifini.com/search.htm?keyword=$2 302
 // gh （GitHub）
