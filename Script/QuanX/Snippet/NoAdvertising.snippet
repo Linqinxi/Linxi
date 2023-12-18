@@ -5,8 +5,9 @@
 
 # > 波点音乐去广告，hostname = bd-api.kuwo.cn
 # > 波点音乐主页去轮播图、波点实验室，作者：@chxm1023
-^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) url reject-dict
 https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+
+^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) url reject-dict
 
 # > Lofter去广告，hostname = ad.lofter.com
 ^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) url reject-dict
