@@ -1,0 +1,7 @@
+#!name=百度输入法
+#!desc=感谢keywos的大佬分享，本脚本为自用。
+#!author=keywos
+#!source=https://github.com/Keywos/rule/raw/main/mocks/bd.json
+#!time=2023-12-18 18:13:30
+
+{"errno": 0,"logid": "4637665906","data": {"control": {},"service": {},"pubparam": {"bd_version": "11.7.0.105","device_ua": "iphone"}}}
