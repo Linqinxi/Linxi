@@ -1,20 +1,5 @@
-/*
-作者：baby
-软件：iscreen
-下载地址：https://is.gd/ktU5t2
-说明：解锁会员
-说明：感谢baby的分享，本脚本为自用
-来源：https://raw.githubusercontent.com/Yu9191/Rewrite/main/iscreen.js
+#!name=iScreen
 
-[rewrite_local]
-
-^http[s]?:\/\/cs.kuso.xyz\/configs url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/carry/Script/QuanX/JS/iScreen.js
-
-[mitm] 
-
-hostname = cs.kuso.xyz
-
-*/
 var ios151 = JSON.parse($response.body);
 ios151.data.FeedBanner = "3333";
 ios151.data.IsandBannerAd = 0;
