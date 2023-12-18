@@ -41,6 +41,7 @@ https?:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? url script-response-bod
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
 ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url echo-response text/html echo-response https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json
 
 # > 百度输入法净化，个人页随机图片。作者：@Keywos ，来源：https://github.com/Keywos/rule/raw/main/JS/quanx/bdsrf.snippet
 # > hostname = imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com
