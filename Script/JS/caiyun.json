@@ -1,0 +1,6 @@
+#!name=彩云天气
+#!desc=感谢keywos的大佬分享，本脚本为自用。
+#!author=keywos
+#!来源=https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json
+
+{"status":"ok","interval": 99999999999999,"id":"65313ba218edd12649a73027","activities": [{"items":[{"text":"","image_light":"https:\/\/raw.githubusercontent.com\/Keywos\/rule\/main\/mocks\/reject-img.gif","link":"","activity_name":"","id":"1","image_dark":""}],"type":"activity_icon","name":"","carousel":"5000"}]}
