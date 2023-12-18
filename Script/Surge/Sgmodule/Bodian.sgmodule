@@ -3,7 +3,9 @@
 
 [Map Local]
 ^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) data="https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/Surge/Rewrite/reject-dict.json"
+
 [Script]
-波点音乐 = type=http-response,pattern=^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/Surge/JS/bodiao.js
+波点音乐 = type=http-response,pattern=^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+
 [MITM]
 hostname = %APPEND% bd-api.kuwo.cn

@@ -4,7 +4,7 @@
 
 [Script]
 
-iScreen= type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/cs.kuso.xyz\/configs,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/carry/Script/QuanX/JS/iScreen.js
+iScreen= type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/cs.kuso.xyz\/configs,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/carry/Script/JS/iScreen.js
 
 
 [MITM]

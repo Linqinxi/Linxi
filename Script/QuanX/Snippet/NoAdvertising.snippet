@@ -1,10 +1,12 @@
 #!name=林夕净化
 #!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度
 #!author=林夕、Keywos、RuCu6、baby  
-#!说明=感谢Keywos、RuCu6、baby大佬们的分享，本脚本为自用。
+#!特别说明=感谢Keywos、RuCu6、baby大佬们的分享，本脚本为自用。
 
 # > 波点音乐去广告，hostname = bd-api.kuwo.cn
 ^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) url reject-dict
+# > 波点音乐主页去轮播图、波点实验室，作者：@chxm1023
+https?:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 # > Lofter去广告，hostname = ad.lofter.com
 ^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) url reject-dict
