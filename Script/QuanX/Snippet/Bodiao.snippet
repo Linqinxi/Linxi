@@ -1,0 +1,10 @@
+#!name=波点音乐净化
+#!desc=去波点音乐大部分的广告，作者∶林夕、chxm1023
+
+#[rewrite_local]
+^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) url reject-dict
+
+https?:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/Surge/JS/bodiao.js
+
+#[MITM]
+hostname = bd-api.kuwo.cn
