@@ -4,11 +4,6 @@
 #!Telegram=https://t.me/Linxi01
 
 
-#邀请好友送VIP
-^https:\/\/bd-api\.kuwo\.cn\/api\/play\/advert\/info\? url reject-dict
-#对你感兴趣
-^https:\/\/bd-api\.kuwo\.cn\/api\/play\/listening\/entrance\/music\? url reject-dict
-
-https?:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list)\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 hostname = bd-api.kuwo.cn
