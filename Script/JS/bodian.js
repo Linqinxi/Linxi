@@ -2,7 +2,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 const ad = /api\/service\/(home\/index|banner\/myPage)/;
 const adv = /api\/play\/(advert\/info|listening\/entrance\/music)/;
-const to = /api\/search\/topic\/word\/list/;
+const top = /api\/(search\/topic\/word\/list|playlist\/collect\/all|voice\/room\/sidebar)/;
 
 if (ad.test($request.url)) {
    obj.data.bannerList = [];
@@ -14,7 +14,7 @@ if (adv.test($request.url)) {
    obj.data.entranceMusic = {};
    obj.data.advert = {};
 }
-if (to.test($request.url)) {
+if (top.test($request.url)) {
    obj.data = {};
 }
 

@@ -2,7 +2,7 @@
 #!desc=去波点音乐大部分的广告，作者∶林夕、chxm1023
 
 [Script]
-波点音乐 = type=http-response,pattern=https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+波点音乐 = type=http-response,pattern=https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list|playlist\/collect\/all|voice\/room\/sidebar)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 [MITM]
 hostname = %APPEND% bd-api.kuwo.cn
