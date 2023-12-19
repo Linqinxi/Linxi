@@ -4,7 +4,7 @@
 #!特别说明=感谢Keywos、RuCu6、baby大佬们的分享，本脚本为自用。
 
 # > 波点音乐去广告，hostname = bd-api.kuwo.cn
-https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list)\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list|playlist\/collect\/all|voice\/room\/sidebar)\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 # > Lofter去广告，hostname = ad.lofter.com
 ^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) url reject-dict
