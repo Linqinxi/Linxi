@@ -1,5 +1,3 @@
-#!name=波点音乐
-
 var body = $response.body;
 var obj = JSON.parse(body);
 const ad = /api\/service\/(home\/index|banner\/myPage)/;
@@ -8,6 +6,7 @@ const to = /api\/search\/topic\/word\/list/;
 
 if (ad.test($request.url)) {
    obj.data.bannerList = [];
+   if (obj.data.moduleList && obj.data.moduleList.length > 0) {
   obj.data.moduleList = obj.data.moduleList.filter(item => item.name !== "轮播图" && item.name !== "波点实验室");
 }
 
