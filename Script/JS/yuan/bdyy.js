@@ -1,20 +1,10 @@
-#!name=波点音乐#!name=监控汇率变化
-#!author=Peng-YM
-#!Alter=chxm1023
-#!更新地址=https://raw.githubusercontent.com/chxm1023/Task/main/hljk.js
-#!配置方法：
-#!1. 设置基准货币，默认人民币(CNY)。
-#!2. 设置保留几位小数。
-#!update =YangZhaocool
-#!来源=https://raw.githubusercontent.com/chxm1023/Task/main/hljk.js
-#!特别说明= 感谢Peng-YM、chxm1023大佬们的分享，本脚本为自用。
+#!name=波点音乐
 
-10 0 * * ? https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/QuanX/Task/hljk.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png, enabled=true
 # > 波点音乐去广告
 #波点音乐开屏广告，hostname = pgdt.gtimg.cn, us.l.qq.com
-#^https?:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ url reject
+^https?:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ url reject
 
-#^https?:\/\/us\.l\.qq\.com\/exapp\?spsa=1&posid url reject
+^https?:\/\/us\.l\.qq\.com\/exapp\?spsa=1&posid url reject
 
 # > 波点音乐主页排行榜，hostname = bd-api.kuwo.cn
 ^https?:\/\/bd-api\.kuwo\.cn\/api\/service\/v2\/finds\/index\?uid= url reject-dict
