@@ -24,9 +24,6 @@ tcp-connection = true
 ^https?:\/\/starplucker\.cyapi\.cn\/v3\/operation\/features\? - reject
 
 [Map Local]
-# > 波点音乐去广告，hostname = bd-api.kuwo.cn
-^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/v2\/finds\/index|service\/banner\/myPage|play\/listening\/entrance\/music|play\/advert\/info|search\/topic\/word\/list) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-
 # > Lofter去广告，hostname = ad.lofter.com
 ^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
@@ -78,8 +75,8 @@ tcp-connection = true
 # > 百度输入法净化，个人页随机图片。作者：@Keywos，来源：
 BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),requires-body=1,max-size=0,script-update-interval=-1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
 
-# > 波点音乐主页去轮播图、波点实验室，作者：@chxm1023
-波点音乐 = type=http-response,pattern=^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+# > 波点音乐去广告，hostname = bd-api.kuwo.cn
+波点音乐 = type=http-response,pattern=https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 
 [MITM]
