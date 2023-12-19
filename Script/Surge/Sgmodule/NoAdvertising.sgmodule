@@ -76,7 +76,7 @@ tcp-connection = true
 BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),requires-body=1,max-size=0,script-update-interval=-1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
 
 # > 波点音乐去广告，hostname = bd-api.kuwo.cn
-波点音乐 = type=http-response,pattern=https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+波点音乐 = type=http-response,pattern=https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list|playlist\/collect\/all|voice\/room\/sidebar)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
 
 
 [MITM]
