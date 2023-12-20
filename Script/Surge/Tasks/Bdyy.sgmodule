@@ -1,0 +1,8 @@
+#!name=波点音乐vip签到
+#!desc=感谢Yuheng的大佬分享，本脚本为自用。
+#!author=Yuheng
+#!source=https://github.com/Yuheng0101/X/tree/main/Tasks/Bdyy
+#!time=2023-12-20 19:26:30
+
+[Script]
+波点音乐自动签到 = type=cron,cronexp=0 1 * * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js,timeout=60
