@@ -1,0 +1,84 @@
+# > 安全浏览限制解除
+host, lookup.api.bsb.baidu.com, reject
+host-suffix, u3.ucweb.com, reject
+host-keyword, safebrowsing., reject
+
+# > 彩云天气
+host, ad.cyapi.cn, reject
+
+# > 番茄小说
+host, p6-ad-sign.byteimg.com, reject
+host, p9-ad-sign.byteimg.com, reject
+host, i.snssdk.com, reject
+host, i-lq.snssdk.com, reject
+host, dig.bdurl.net, reject
+host-suffix, zijieapi.com, reject
+host, activity-ag.awemeughun.com, reject
+host, mcs.snssdk.com, reject
+host, tnc3-alisc1.snssdk.com, reject
+host, security-lq.snssdk.com, reject
+host, tnc3-aliec2.snssdk.com, reject
+host, is.snssdk.com, reject
+host, msync-im1-vip6-std.easemob.com, reject
+host, apd-pcdnwxlogin.teg.tencent-cloud.net, reject
+host, api.iegadp.qq.com, reject
+host, sf3-ttcdn-tos.pstatp.com, reject
+host-suffix, pglstatp-toutiao.com, reject
+host, *default.ixigua.com, reject
+host, v6-novelapp.ixigua.com, reject
+host, *novelapp.ixigua.com, reject
+host-suffix, byteorge.com, reject
+host-suffix, bytegoofy.com, reject
+host-suffix, bytedance.com, reject
+ip-cidr, 49.71.37.101/32, reject
+ip-cidr, 117.71.105.23/32, reject
+ip-cidr, 218.94.207.205/32, reject
+ip-cidr, 117.92.229.188/32, reject
+ip-cidr, 101.36.166.16/32, reject
+ip-cidr, 180.96.2.114/32, reject
+# 番茄小说福利页
+host, lf-sourcecdn-tos.bytegecko.com, direct
+
+# > qq音乐
+host, adstats.tencentmusic.com, reject
+host, ad.tencentmusic.com, reject
+host, adcdn.tencentmusic.com, reject
+host, adexpo.tencentmusic.com, reject
+host, adclick.tencentmusic.com, reject
+host, monitor.music.qq.com, reject
+host, stat.y.qq.com, reject
+host, tmead.y.qq.com, reject
+host, oth.str.mdt.qq.com, reject
+host, h.trace.qq.com, reject
+host, sdk.e.qq.com, reject
+host, p.l.qq.com, reject
+host, us.l.qq.com, reject
+host, tangram.e.qq.com, reject
+host, adcdn6.tencentmusic.com, reject
+host, mazu.m.qq.com, reject
+host-suffix, imtmp.net, reject
+
+# > 腾讯
+host, adsmind.gdtimg.com, reject
+host, info4.video.qq.com, reject
+host, info6.video.qq.com, reject
+host, ios.video.mpush.qq.com, reject
+host, otheve.beacon.qq.com, reject
+host, pgdt.gtimg.cn, reject
+host, tpns.qq.com, reject
+host-suffix, gdt.qq.com, reject
+host-suffix, l.qq.com, reject
+host-keyword, trace.qq.com, reject
+host-keyword, trace.video.qq.com, reject
+ip-cidr, 47.110.187.87/32, reject
+
+# > 网易云音乐
+host, iadmat.nosdn.127.net, reject
+host, iadmatapk.nosdn.127.net, reject
+host, iadmusicmat.music.126.net, reject
+host, iadmusicmatvideo.music.126.net, reject
+host, ipv4.music.163.com, reject
+host, ipv6.music.163.com, reject
+host-suffix, 163jiasu.com, reject
+# > 微博 开屏广告
+host-suffix, biz.weibo.com, reject
