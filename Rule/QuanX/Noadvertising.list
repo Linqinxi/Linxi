@@ -2,13 +2,10 @@
 host, lookup.api.bsb.baidu.com, reject
 host-suffix, u3.ucweb.com, reject
 host-keyword, safebrowsing., reject
-
 # > 阿里云
 ip-cidr, 203.107.1.1/24, reject
-
 # > 彩云天气
 host, ad.cyapi.cn, reject
-
 # > 番茄小说
 host, p6-ad-sign.byteimg.com, reject
 host, p9-ad-sign.byteimg.com, reject
@@ -41,7 +38,6 @@ ip-cidr, 101.36.166.16/32, reject
 ip-cidr, 180.96.2.114/32, reject
 # 番茄小说福利页
 host, lf-sourcecdn-tos.bytegecko.com, direct
-
 # > qq音乐
 host, adstats.tencentmusic.com, reject
 host, ad.tencentmusic.com, reject
@@ -60,7 +56,6 @@ host, tangram.e.qq.com, reject
 host, adcdn6.tencentmusic.com, reject
 host, mazu.m.qq.com, reject
 host-suffix, imtmp.net, reject
-
 # > 腾讯
 host, adsmind.gdtimg.com, reject
 host, info4.video.qq.com, reject
@@ -74,16 +69,13 @@ host-suffix, l.qq.com, reject
 host-keyword, trace.qq.com, reject
 host-keyword, trace.video.qq.com, reject
 ip-cidr, 47.110.187.87/32, reject
-
 # > 七猫小说
 host, cdn-new-ad.wtzw.com, reject
 host, a-remad.qm989.com, reject
 host, mobads.baidu.com, reject
-host-suffix, gdt.qq.com, reject
 host, qzs.gdtimg.com, reject
 host, mobads-pre-config.cdn.bcebos.com, reject
 host, pgdt.ugdtimg.com, reject
-
 # > 网易云音乐
 host, iadmat.nosdn.127.net, reject
 host, iadmatapk.nosdn.127.net, reject
@@ -92,13 +84,10 @@ host, iadmusicmatvideo.music.126.net, reject
 host, ipv4.music.163.com, reject
 host, ipv6.music.163.com, reject
 host-suffix, 163jiasu.com, reject
-
 # > 微博 开屏广告
 host-suffix, biz.weibo.com, reject
-
 # > 中国移动
 ip-cidr, 120.240.95.37/32, reject
-
 # > 其他广告
 host, px.ucweb.com, reject
 host-suffix, ca.iadsdk.apple.com, reject
@@ -106,7 +95,6 @@ host-suffix, h-adashx.ut.taobao.com, reject
 host-suffix, ulogs.umengcloud.com, reject
 host-suffix, ulogs.umeng.com, reject
 host-suffix, unilog.wostore.cn, reject
-host, tnc3-aliec2.snssdk.com, reject
 host-keyword, pangolin.snssdk.com, reject
 host, mobads-logs.baidu.com, reject
 host-keyword, mobads-pre-config.cdn.bcebos.com, reject
@@ -120,7 +108,6 @@ host-suffix, dxp.baidu.com, reject
 host-suffix, adkwai.com, reject
 host-suffix, , e.kuaishou.com, reject
 host-keyword, pangolin-sdk-toutiao, reject
-host, mobads.baidu.com, reject
 host-suffix, mi.gdt.qq.com, reject
 host, toblog.ctobsnssdk.com, reject
 host-suffix, app-measurement.com, reject
@@ -137,15 +124,11 @@ host-suffix, iadsdk.apple.com, reject
 host-suffix, ios.bugly.qq.com, reject
 host-suffix, appsflyer.com, reject
 host-keyword, dp.im.weibo.cn, reject
-host-suffix, biz.weibo.com, reject
 host, vv.video.qq.com, reject
 host-suffix, oth.eve.mdt.qq.com, reject
-host, p.l.qq.com, reject
 host-suffix, ios.rqd.qq.com, reject
 host-suffix, beacon.qq.com, reject
 host-suffix, oth.str.mdt.qq.com, reject
-host, tmead.y.qq.com, reject
-host, adstats.tencentmusic.com, reject
 host-suffix, wanproxy.127.net, reject
 host-suffix, adbehavior.wsa.ximalaya.com, reject
 host, adbehavior.ximalaya.com, reject
@@ -157,16 +140,10 @@ host-suffix, devs.data.mob.com, reject
 host-suffix, adse.wsa.ximalaya.com, reject
 host-suffix, xdcs-collector.ximalaya.com, reject
 host-suffix, e.kuaishou.com, reject
-host, ad.tencentmusic.com, reject
-host-suffix, l.qq.com, reject
-host, mobads-pre-config.cdn.bcebos.com, reject
-host-suffix, bytegoofy.com, reject
-host, qzs.gdtimg.com, reject
 host-suffix, anythinktech.com, reject
 host-suffix, alogs.umengcloud.com, reject
 host-suffix, alogs.umeng.com, reject
 host-keyword, uop.umeng.com, reject
 host-suffix, fusion.qq.com, reject
 host-keyword, sdk.open.talk.getui.com, reject
-host, pgdt.gtimg.cn, reject
 host, tmeadcomm.y.qq.com, reject
