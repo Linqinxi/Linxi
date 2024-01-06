@@ -106,7 +106,7 @@ host, afd.baidu.com, reject
 host, rp.hpplay.cn, reject
 host-suffix, dxp.baidu.com, reject
 host-suffix, adkwai.com, reject
-host-suffix, , e.kuaishou.com, reject
+host-suffix, e.kuaishou.com, reject
 host-keyword, pangolin-sdk-toutiao, reject
 host-suffix, mi.gdt.qq.com, reject
 host, toblog.ctobsnssdk.com, reject
@@ -139,7 +139,6 @@ host-suffix, adse.ximalaya.com, reject
 host-suffix, devs.data.mob.com, reject
 host-suffix, adse.wsa.ximalaya.com, reject
 host-suffix, xdcs-collector.ximalaya.com, reject
-host-suffix, e.kuaishou.com, reject
 host-suffix, anythinktech.com, reject
 host-suffix, alogs.umengcloud.com, reject
 host-suffix, alogs.umeng.com, reject
