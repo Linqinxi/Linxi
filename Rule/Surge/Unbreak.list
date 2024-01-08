@@ -1,0 +1,8 @@
+#!name=分流修正
+#!desc=分流修正
+#!author=林夕
+#!date= 2024-01-08 16:15:34
+#!规则数量=1
+
+# 番茄小说福利页
+DOMAIN, lf-sourcecdn-tos.bytegecko.com

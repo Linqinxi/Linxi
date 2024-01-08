@@ -1,7 +1,7 @@
 #!name=林夕净化
 #!desc=去广告
 #!author=林夕
-#!date= 2024-01-08 15:24:15
+#!date= 2024-01-08 16:15:34
 #!规则数量=136
 
 # > 安全浏览限制解除
@@ -43,7 +43,7 @@ IP-CIDR, 117.92.229.188/32
 IP-CIDR, 101.36.166.16/32
 IP-CIDR, 180.96.2.114/32
 # 番茄小说福利页
-DOMAIN, lf-sourcecdn-tos.bytegecko.com, direct
+DOMAIN, lf-sourcecdn-tos.bytegecko.com
 # > qq音乐
 DOMAIN, adstats.tencentmusic.com
 DOMAIN, ad.tencentmusic.com
