@@ -1,0 +1,154 @@
+#!name=林夕净化
+#!desc=去广告
+#!author=林夕
+#!date= 2024-01-08 15:24:15
+#!规则数量=136
+
+# > 安全浏览限制解除
+DOMAIN, lookup.api.bsb.baidu.com
+DOMAIN-SUFFIX, u3.ucweb.com
+DOMAIN-KEYWORD, safebrowsing.
+# > 阿里云
+IP-CIDR, 203.107.1.1/24
+# > 彩云天气
+DOMAIN, ad.cyapi.cn
+# > 番茄小说
+DOMAIN, p6-ad-sign.byteimg.com
+DOMAIN, p9-ad-sign.byteimg.com
+DOMAIN, i.snssdk.com
+DOMAIN, i-lq.snssdk.com
+DOMAIN, dig.bdurl.net
+DOMAIN-SUFFIX, zijieapi.com
+DOMAIN, activity-ag.awemeughun.com
+DOMAIN, mcs.snssdk.com
+DOMAIN, tnc3-alisc1.snssdk.com
+DOMAIN, security-lq.snssdk.com
+DOMAIN, tnc3-aliec2.snssdk.com
+DOMAIN, is.snssdk.com
+DOMAIN, msync-im1-vip6-std.easemob.com
+DOMAIN, apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN, api.iegadp.qq.com
+DOMAIN, sf3-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX, pglstatp-toutiao.com
+DOMAIN, *default.ixigua.com
+DOMAIN, v6-novelapp.ixigua.com
+DOMAIN, *novelapp.ixigua.com
+DOMAIN-SUFFIX, byteorge.com
+DOMAIN-SUFFIX, bytegoofy.com
+DOMAIN-SUFFIX, bytedance.com
+IP-CIDR, 49.71.37.101/32
+IP-CIDR, 117.71.105.23/32
+IP-CIDR, 218.94.207.205/32
+IP-CIDR, 117.92.229.188/32
+IP-CIDR, 101.36.166.16/32
+IP-CIDR, 180.96.2.114/32
+# 番茄小说福利页
+DOMAIN, lf-sourcecdn-tos.bytegecko.com, direct
+# > qq音乐
+DOMAIN, adstats.tencentmusic.com
+DOMAIN, ad.tencentmusic.com
+DOMAIN, adcdn.tencentmusic.com
+DOMAIN, adexpo.tencentmusic.com
+DOMAIN, adclick.tencentmusic.com
+DOMAIN, monitor.music.qq.com
+DOMAIN, stat.y.qq.com
+DOMAIN, tmead.y.qq.com
+DOMAIN, oth.str.mdt.qq.com
+DOMAIN, h.trace.qq.com
+DOMAIN, sdk.e.qq.com
+DOMAIN, p.l.qq.com
+DOMAIN, us.l.qq.com
+DOMAIN, tangram.e.qq.com
+DOMAIN, adcdn6.tencentmusic.com
+DOMAIN, mazu.m.qq.com
+DOMAIN-SUFFIX, imtmp.net
+# > 腾讯
+DOMAIN, adsmind.gdtimg.com
+DOMAIN, info4.video.qq.com
+DOMAIN, info6.video.qq.com
+DOMAIN, ios.video.mpush.qq.com
+DOMAIN, otheve.beacon.qq.com
+DOMAIN, pgdt.gtimg.cn
+DOMAIN, tpns.qq.com
+DOMAIN-SUFFIX, gdt.qq.com
+DOMAIN-SUFFIX, l.qq.com
+DOMAIN-KEYWORD, trace.qq.com
+DOMAIN-KEYWORD, trace.video.qq.com
+IP-CIDR, 47.110.187.87/32
+# > 七猫小说
+DOMAIN, cdn-new-ad.wtzw.com
+DOMAIN, a-remad.qm989.com
+DOMAIN, mobads.baidu.com
+DOMAIN, qzs.gdtimg.com
+DOMAIN, mobads-pre-config.cdn.bcebos.com
+DOMAIN, pgdt.ugdtimg.com
+# > 网易云音乐
+DOMAIN, iadmat.nosdn.127.net
+DOMAIN, iadmatapk.nosdn.127.net
+DOMAIN, iadmusicmat.music.126.net
+DOMAIN, iadmusicmatvideo.music.126.net
+DOMAIN, ipv4.music.163.com
+DOMAIN, ipv6.music.163.com
+DOMAIN-SUFFIX, 163jiasu.com
+# > 微博 开屏广告
+DOMAIN-SUFFIX, biz.weibo.com
+# > 中国移动
+IP-CIDR, 120.240.95.37/32
+# > 其他广告
+DOMAIN, px.ucweb.com
+DOMAIN-SUFFIX, ca.iadsdk.apple.com
+DOMAIN-SUFFIX, h-adashx.ut.taobao.com
+DOMAIN-SUFFIX, ulogs.umengcloud.com
+DOMAIN-SUFFIX, ulogs.umeng.com
+DOMAIN-SUFFIX, unilog.wostore.cn
+DOMAIN-KEYWORD, pangolin.snssdk.com
+DOMAIN, mobads-logs.baidu.com
+DOMAIN-KEYWORD, mobads-pre-config.cdn.bcebos.com
+DOMAIN, hmma.baidu.com
+DOMAIN-SUFFIX, static-res.qq.com
+DOMAIN, als.baidu.com
+DOMAIN, nsclick.baidu.com
+DOMAIN, afd.baidu.com
+DOMAIN, rp.hpplay.cn
+DOMAIN-SUFFIX, dxp.baidu.com
+DOMAIN-SUFFIX, adkwai.com
+DOMAIN-SUFFIX, e.kuaishou.com
+DOMAIN-KEYWORD, pangolin-sdk-toutiao
+DOMAIN-SUFFIX, mi.gdt.qq.com
+DOMAIN, toblog.ctobsnssdk.com
+DOMAIN-SUFFIX, app-measurement.com
+DOMAIN-KEYWORD, pglstatp-toutiao
+DOMAIN, errlog.umeng.com
+DOMAIN-SUFFIX, e.qq.com
+DOMAIN-SUFFIX, astrategy.beacon.qq.com
+DOMAIN, httpdns.alicdn.com
+DOMAIN-KEYWORD, volces.com
+DOMAIN, logs.amap.com
+DOMAIN-SUFFIX, dualstack-logs.amap.com
+DOMAIN-KEYWORD, wbapp.uve.weibo.com
+DOMAIN-SUFFIX, iadsdk.apple.com
+DOMAIN-SUFFIX, ios.bugly.qq.com
+DOMAIN-SUFFIX, appsflyer.com
+DOMAIN-KEYWORD, dp.im.weibo.cn
+DOMAIN, vv.video.qq.com
+DOMAIN-SUFFIX, oth.eve.mdt.qq.com
+DOMAIN-SUFFIX, ios.rqd.qq.com
+DOMAIN-SUFFIX, beacon.qq.com
+DOMAIN-SUFFIX, oth.str.mdt.qq.com
+DOMAIN-SUFFIX, wanproxy.127.net
+DOMAIN-SUFFIX, adbehavior.wsa.ximalaya.com
+DOMAIN, adbehavior.ximalaya.com
+DOMAIN-SUFFIX, qchannel01.cn
+DOMAIN-SUFFIX, mob.com
+DOMAIN-SUFFIX, qchannel03.cn
+DOMAIN-SUFFIX, adse.ximalaya.com
+DOMAIN-SUFFIX, devs.data.mob.com
+DOMAIN-SUFFIX, adse.wsa.ximalaya.com
+DOMAIN-SUFFIX, xdcs-collector.ximalaya.com
+DOMAIN-SUFFIX, anythinktech.com
+DOMAIN-SUFFIX, alogs.umengcloud.com
+DOMAIN-SUFFIX, alogs.umeng.com
+DOMAIN-KEYWORD, uop.umeng.com
+DOMAIN-SUFFIX, fusion.qq.com
+DOMAIN-KEYWORD, sdk.open.talk.getui.com
+DOMAIN, tmeadcomm.y.qq.com
