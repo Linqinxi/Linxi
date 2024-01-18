@@ -3,7 +3,6 @@
 #!author=林夕
 #!date=2024-01-08 15:24:15
 #!规则数量=136
-
 # > 安全浏览限制解除
 host, lookup.api.bsb.baidu.com, reject
 host-suffix, u3.ucweb.com, reject
@@ -152,3 +151,4 @@ host-keyword, uop.umeng.com, reject
 host-suffix, fusion.qq.com, reject
 host-keyword, sdk.open.talk.getui.com, reject
 host, tmeadcomm.y.qq.com, reject
+host-suffix, da.anythinktech.com, reject
