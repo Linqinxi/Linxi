@@ -55,3 +55,4 @@ json = type=http-response, pattern=^https:\/\/app\.bilibili\.com\/x\/resource\/s
 
 [MITM]
 hostname = %APPEND% app.bilibili.com, api.bilibili.com, api.live.bilibili.com, grpc.biliapi.net
+
