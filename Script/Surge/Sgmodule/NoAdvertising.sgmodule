@@ -1,6 +1,6 @@
 #!name=林夕净化
-#!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度
-#!author=林夕、key、RuCu6、baby、chxm1023
+#!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、爱思助手、大师兄影视、微博、彩云天气、百度输入法、百度、番茄小说
+#!author=林夕、key、RuCu6、baby、chxm1023、zqzess
 #!特别说明=感谢Keywos、RuCu6、baby、chxm1023大佬们的分享，本脚本为自用。
 
 [General]
@@ -58,6 +58,28 @@ tcp-connection = true
 # > Baidu 首页纯净搜索 @key，hostname = m.baidu.com,www.baidu.com，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/baiduIndex.sgmodule
 ^https?:\/\/(www|m)\.baidu\.com\/?($|\?(from=\w{8,9}|tn=&from=)) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/baidu.html" header="Content-Type: text/html; charset=utf-8"
 
+# > 感谢@zqzess的分享，来源：https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Surge/Module/FanQieNovel.sgmodule
+# > hostname = %APPEND% *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,adim.pinduoduo.com,*.fqnovelvod.com
+# 番茄小说去章末广告
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ - reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ - reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer - reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package - reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad - reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ - reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 - reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ - reject
+# 下面两条来自他人,暂不知是哪个app
+^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
+
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(ad-app-package|ad)\/.+ - reject
+^https?:\/\/adim\.pinduoduo\.com\/.+\/toutiao\?.+ - reject
+^https?:\/\/v(\d)+-novelapp\.fqnovelvod\.com\/.+\/video\/.+ - reject
+
+
 
 [Script]
 # > 感谢key的分享，来源：https://raw.githubusercontent.com/Keywos/rule/main/module/noAdrule.sgmodule
@@ -80,6 +102,6 @@ BDSRF = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/p
 
 [MITM]
 h2 = true
-hostname = %APPEND% bd-api.kuwo.cn, ad.lofter.com, sdk.alibaba.com.ailbaba.me, starplucker.cyapi.cn, api.weibo.cn, list-app-m.i4.cn, search-app-m.i4.cn, biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com, m.baidu.com,www.baidu.com   
+hostname = %APPEND% bd-api.kuwo.cn, ad.lofter.com, sdk.alibaba.com.ailbaba.me, starplucker.cyapi.cn, api.weibo.cn, list-app-m.i4.cn, search-app-m.i4.cn, biz.cyapi.cn, wrapper.cyapi.cn, api.caiyunapp.com, imeres.baidu.com, mbd.baidu.com, mime.baidu.com, h2tcbox.baidu.com, m.baidu.com,www.baidu.com, *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,adim.pinduoduo.com,*.fqnovelvod.com
 
 
