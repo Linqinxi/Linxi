@@ -2,6 +2,8 @@
 #!desc=自用合集，全部为非一次性解锁
 #!author=林夕、baby
 #!Telegram=https://t.me/Linxi01
+#!category=林夕
+#!date=2024-02-02 15:43:57
 
 [Script]
 一木清单= type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/yimutodo\.com\/api\/v\/mtop,script-path=https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/ymqd.js
