@@ -38,46 +38,6 @@
           "val": "",
           "type": "text",
           "desc": "这个填你的key"
-        },
-        {
-          "id": "BIE_API",
-          "name": "API",
-          "placeholder": "",
-          "val": "",
-          "type": "text",
-          "desc": "这个填api"
-        },
-        {
-          "id": "BIE_TIMEOUT",
-          "name": "TIMEOUT",
-          "placeholder": "",
-          "val": "",
-          "type": "text",
-          "desc": "30000"
-        },
-        {
-          "id": "BIE_MODEL",
-          "name": "MODEL",
-          "placeholder": "",
-          "val": "",
-          "type": "text",
-          "desc": "gpt-3.5-turbo"
-        },
-        {
-          "id": "BIE_MAX_TOKENS",
-          "name": "MAX_TOKENS",
-          "placeholder": "",
-          "val": "",
-          "type": "text",
-          "desc": "50"
-        },
-        {
-          "id": "BIE_TEMPERATURE",
-          "name": "TEMPERATURE",
-          "placeholder": "",
-          "val": "",
-          "type": "text",
-          "desc": "0.5"
         }
       ],
       "icons": [
