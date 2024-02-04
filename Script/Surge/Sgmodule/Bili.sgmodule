@@ -2,6 +2,7 @@
 #!desc=没有广告的哔哩哔哩更值得干杯
 #!author=RuCu6 Maasea
 #!update = 2023-12-26 20:40
+#!category=净化
 
 [Map Local]
 ^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
