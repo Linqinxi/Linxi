@@ -13,13 +13,13 @@
         "<a onClick=\"window.location.reload(true);\">刷新</a>"
       ],
       "keys": [
-        "@BIE_TYPE",
-        "@BIE_KEY",
-        "@BIE_API",
-        "@BIE_TIMEOUT",
-        "@BIE_MODEL",
-        "@BIE_MAX_TOKENS",
-        "@BIE_TEMPERATURE"
+        "BIE_TYPE",
+        "BIE_KEY",
+        "BIE_API",
+        "BIE_TIMEOUT",
+        "BIE_MODEL",
+        "BIE_MAX_TOKENS",
+        "BIE_TEMPERATURE"
       ],
       "author": "@Linqinxi",
       "repo": "https://github.com/xream/scripts/tree/main/surge/modules/baidu_input_enhanced",
