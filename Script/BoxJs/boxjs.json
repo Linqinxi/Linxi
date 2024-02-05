@@ -15,6 +15,7 @@
       "keys": [
         "BIE_TYPE",
         "BIE_KEY"
+        "BIE_API"
       ],
       "author": "@Linqinxi",
       "repo": "https://github.com/xream/scripts/tree/main/surge/modules/baidu_input_enhanced",
@@ -29,6 +30,14 @@
         {
           "id": "BIE_KEY",
           "name": "KEY",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "这个填你的key"
+        },
+        {
+          "id": "BIE_API",
+          "name": "API",
           "placeholder": "",
           "val": "",
           "type": "text",
