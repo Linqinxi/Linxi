@@ -41,7 +41,7 @@
           "placeholder": "",
           "val": "",
           "type": "text",
-          "desc": "这个填你的key"
+          "desc": "这个填API"
         }
       ],
       "icons": [
