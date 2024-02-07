@@ -1,0 +1,40 @@
+#!name=林夕净化
+#!desc=脚本全部为自用，只是为了方便自用做的合集！！！目前只有：波点音乐、Lofter、微博、彩云天气、录音专家
+#!author=林夕、key、RuCu6、baby、chxm1023
+#!特别说明=感谢Keywos、RuCu6、baby、chxm1023大佬们的分享，本脚本为自用。
+#!date=
+
+# > 感谢RuCu6的分享
+# > 微博去首页红点，hostname = api.weibo.cn
+^https?:\/\/api\.weibo\.cn\/2\/remind\/unread_count url reject-dict
+
+# > 微博去消息的打开通知
+^https?:\/\/api\.weibo\.cn\/2\/remind\/unread_count url reject-dict
+
+# > 感谢baby的分享
+# > 彩云天气发现，hostname = starplucker.cyapi.cn
+^https?:\/\/starplucker\.cyapi\.cn\/v3\/operation\/features\? url reject-dict
+
+# > Lofter去广告，hostname = ad.lofter.com
+^https?:\/\/ad\.lofter\.com\/v1\.1\/(yitou|configs)\/(madr_conf\?product|madrs|madr|.api\?product=[^2]+) url reject-dict
+
+# b站精简占用，重写
+(?=resource\?resourceUrl|upos\-sz\-staticcos) url reject
+(?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ url reject
+
+# 录音专家的广告，hostname = luyintu.cushuikeji.cn
+^http?:\/\/luyintu\.cushuikeji\.cn\/v12\.Home\/slideshow url reject
+^http?:\/\/luyintu\.cushuikeji\.cn\/tuv2\.home\/activityAlert url reject
+
+# > 彩云天气，作者：解锁@RuCu6、去广告@Keywos ，来源：https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/AppUnlock.conf
+# > hostname = biz.cyapi.cn, wrapper.cyapi.cn
+
+https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? url script-request-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+
+# > 波点音乐去广告，hostname = bd-api.kuwo.cn
+https:\/\/bd-api\.kuwo\.cn\/api\/(service\/banner\/myPage|service\/home\/index|play\/advert\/info|play\/listening\/entrance\/music|search\/topic\/word\/list|playlist\/collect\/all|voice\/room\/sidebar)\? url script-response-body https://raw.githubusercontent.com/Linqinxi/Linxi/main/Script/JS/bodian.js
+
+
+hostname = api.weibo.cn, ad.lofter.com, luyintu.cushuikeji.cn, starplucker.cyapi.cn, biz.cyapi.cn, wrapper.cyapi.cn, bd-api.kuwo.cn
