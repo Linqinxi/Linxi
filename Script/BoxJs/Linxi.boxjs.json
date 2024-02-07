@@ -1,0 +1,52 @@
+{
+  "id": "Linqinxi.app.sub",
+  "name": "@Linqinxi 的应用订阅",
+  "author": "@Linqinxi",
+  "icon": "https://raw.githubusercontent.com/Linqinxi/Linxi/main/Icon/tz.png",
+  "repo": "https://github.com/Linqinxi/Linxi/tree/main",
+  "apps": [
+    {
+      "id": "baidu_input_enhanced",
+      "name": "百度输入法魔改",
+      "descs_html": [
+        "脚本由 <a href='https://github.com/xream/scripts/tree/main' target='_blank'>@xream</a> 提供, 感谢!",
+        "<a onClick=\"window.location.reload(true);\">刷新</a>"
+      ],
+      "keys": [
+        "BIE_TYPE",
+        "BIE_KEY",
+        "BIE_API"
+      ],
+      "author": "@Linqinxi",
+      "repo": "https://github.com/xream/scripts/tree/main/surge/modules/baidu_input_enhanced",
+      "settings": [
+        {
+          "id": "BIE_TYPE",
+          "name": "TYPE",
+          "val": "",
+          "type": "text",
+          "desc": "这个填ChatGPT/Gemini"
+        },
+        {
+          "id": "BIE_KEY",
+          "name": "KEY",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "这个填你的key"
+        },
+        {
+          "id": "BIE_API",
+          "name": "API",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "这个填API"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Linqinxi/Linxi/main/Icon/Baidu.png"
+      ]
+    }
+  ]
+}
