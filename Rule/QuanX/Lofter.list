@@ -1,0 +1,19 @@
+#Lofter 数量：18
+host-suffix, lofter.com, Lofter
+host-suffix, lf127.net, Lofter
+host-suffix, vod.126.net, Lofter
+host-suffix, netease.im, Lofter
+host-suffix, zijieapi.com, Lofter
+host, ap2.qiyukf.com, Lofter
+host, wanproxy-hz.127.net, Lofter
+host, yaolu.yuedu.163.com, Lofter
+host, yaolu.mh.163.com, Lofter
+host, s6.music.126.net, Lofter
+ip-cidr, 8.219.234.73/24, Lofter
+ip-cidr, 45.254.50.113/24, Lofter
+ip-cidr, 8.219.207.241/20, Lofter
+ip-cidr, 45.32.72.77/20, Lofter
+ip-cidr, 8.222.174.43/20, Lofter
+ip-cidr, 59.111.179.213/20, Lofter
+ip-cidr, 101.71.145.195/24, Lofter
+ip-cidr, 45.254.50.113/24, Lofter
