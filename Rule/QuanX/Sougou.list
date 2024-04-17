@@ -1,3 +1,4 @@
 #搜狗搜索分流
-host-keyword, sogou.com, 香港
-host, sogou.govwza.cn, 香港
+host-keyword, sogou.com, 搜狗
+host-keyword, sogoucdn.com, 搜狗
+host, sogou.govwza.cn, 搜狗
