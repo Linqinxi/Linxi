@@ -1,5 +1,3 @@
-#!name=云上写作
-
 var linxi = $response.body;
  linxi = linxi.replace(/"vip"\s*:\s*\d+/g, '"vip":"1"');
  linxi = linxi.replace(/ "vip_forever"\s*:\s*\d+/g, '"vip_forever":"1"');

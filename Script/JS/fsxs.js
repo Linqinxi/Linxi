@@ -1,5 +1,3 @@
-#!name=番薯小说
-
 var linxi = JSON.parse($response.body);
 linxi.data.vip=true;
 linxi.data.vip_start_time=1695014518000;

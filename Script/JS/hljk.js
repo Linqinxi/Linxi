@@ -1,5 +1,3 @@
-#!name=监控汇率变化
-
 const base = "CNY"; // 基准货币，可以改成其他币种
 const digits = 3; // 保留几位有效数字
 
